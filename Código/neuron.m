@@ -14,11 +14,12 @@ end
 
 x1 = -1:0.1:2;
 x2 = -w(1) / w(3) - (w(2) / w(3)) * x1;
-close all;
-figure;
-subplot 121, plot(1:n,costo), axis tight;
+
+close all
+figure
+subplot 121, plot(1:n,costo), axis tight
 subplot 122, hold on, scatter(x(2,:),x(3,:)), plot(x1,x2), ...
-    axis tight, xlabel('x_1'), ylabel('x_2');
+    axis tight, xlabel('x_1'), ylabel('x_2')
 
 function c = cost(t,w,x)
 
